@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        nav div{
+            background-color: tomato;
+            color: black;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 15px;
+            width: 200px;
+        }
+        @media screen and (orientation: landscape){
+            nav{
+                display: flex;
+            }
+            nav div{
+                margin-right: 30px;
+            }
+            
+        }
+        @media screen and (orientation: portrait){
+            nav{
+                display: block;
+            }
+            nav div{
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Online Shopping
+    </header>
+    <section>
+        <nav>
+            <div>Home</div>
+            <div>Electronics</div>
+            <div>Footwear</div>
+        </nav>
+    </section>
+    <footer>
+        copyright!
+    </footer>
+</body>
+</html>
