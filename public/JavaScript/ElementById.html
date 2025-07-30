@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script >
+        function bodyload(){
+            document.getElementById("pic").src="../images/banner.jpg";
+            document.getElementById("btnReg").value="Register";
+            document.getElementById("name").placeholder="Enter Name Here..";
+            document.getElementById("btnLog").value="Login";
+            document.querySelector(".btn-reset").value="Reset";
+            num=document.getElementsByTagName("input");
+            // alert("Total Inputs: "+num.length);
+            // alert("Welcome to the page! Please fill in your details.");
+        }
+        // function DeleteClick(){
+        //     alert("Input field cleared!");
+        // }
+        function DeleteClick(){
+            flag=confirm("Are you sure you want to clear the input field?");
+            if(flag==true){
+                document.getElementById("name").value="";
+                alert("Input field cleared!");
+                console.error("Input field cleared successfully.");
+            } else {
+                alert("Input field not cleared.");
+                console.warn("Input field clearing cancelled by user.");
+                console.log("User chose not to clear the input field.");
+            }
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <div>
+        <img  id="pic" width="600" height="350">
+    </div>
+    <div>
+        <form >
+            <h1>Register Form</h1>
+            User Name :-
+            <input type="text" id="name" >
+            <input type="button" id="btnReg">
+            <input type="button" class="btn-reset" onclick="DeleteClick()">
+        </form>
+    </div>
+    <div>
+        <form>
+            <h1>Login</h1>
+            Mobile No :-
+            <input type="number">
+            <input type="button" id="btnLog">
+        </form>
+    </div>
+</body>
+</html>
