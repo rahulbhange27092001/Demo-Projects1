@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript</title>
+    <script>
+        function bodyload (){
+            window.document.images[0].src="../images/banner.jpg";
+            window.document.forms[0].elements[1].value="Register";
+            window.document.forms[1].elements[1].value="Login";
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <div>
+        <img width="600" height="350">
+    </div>
+    <div>
+        <form >
+            <h1>Register Form</h1>
+            User Name :-
+            <input type="text">
+            <input type="button">
+        </form>
+    </div>
+    <div>
+        <form>
+            <h1>Login</h1>
+            Mobile No :-
+            <input type="number">
+            <input type="button">
+        </form>
+    </div>
+</body>
+</html>
+

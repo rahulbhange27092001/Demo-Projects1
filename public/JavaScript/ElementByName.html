@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script lang="text\JavaScript">
+        function bodyLoad(){
+            pic.src="../images/banner.jpg";
+            frmRegister.btnReg.value="Register";
+            frmLogin.btnLog.value="Login";
+        }
+    </script>
+</head>
+<body onload="bodyLoad()">
+    <div>
+        <img name="pic" width="600" height="350">
+    </div>
+    <div>
+        <form name="frmRegister">
+            <h1>Register Form</h1>
+            User Name :-
+            <input type="text">
+            <input type="button" name="btnReg">
+        </form>
+    </div>
+    <div>
+        <form name="frmLogin">
+            <h1>Login</h1>
+            Mobile No :-
+            <input type="number">
+            <input type="button" name="btnLog">
+        </form>
+    </div>
+</body>
+</html>
