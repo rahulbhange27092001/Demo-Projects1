@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-Prompt</title>
+    <script>
+        function newFolder(){
+            folder=prompt("Enter Folder Name");
+            document.querySelector("p").innerHTML+="Folder Created : "+folder+"<br>";
+            console.log("New Folder Created")
+        }
+    </script>
+</head>
+<body>
+    <button onclick="newFolder()">Create New Folder</button>
+    <p></p>
+    <input type="date">
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript</title>
+    <script type="text/javascript">
+        function DeleteClick(){
+            flag=confirm("Delete Record\nRecord Will be deleted permanently");
+            console.warn("Warning : Delete Clicked");
+            // if(flag==true){
+            //     // document.write("<b>Record Deleted...</b>");
+            //     document.querySelector("p").innerHTML="<b>Record Deleted...</b>";
+            // }
+            // else{
+            //     // document.querySelector("p").innerText="<b>Canceled</b>";
+            //     document.querySelector("p").innerText="Canceled";
+            // }
+            if(flag==true){
+                document.querySelector("p").outerHTML="<div><b>Record Deleted...</b></div>"
+            }
+            else{
+                document.querySelector("p").outerHTML="<div>Canceled</div>";
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="DeleteClick()">Delete</button>
+    <p align="center"></p>
+</body>
+</html>
