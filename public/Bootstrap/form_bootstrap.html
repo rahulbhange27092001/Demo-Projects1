@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap-Form</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body class="container-fluid">
+    <div class="d-flex justify-content-center align-content-center">
+        <form action="#"  class="w-25">
+            <div class="mb-2 d-flex justify-content-center align-content-center">
+                <h2 >Register Form</h2>
+            </div>
+            <div class="mb-2">
+                <label for="userName" class="form-label">User Name</label>
+                <div>
+                    <input type="text" name="userName" class="form-control">
+                </div>
+            </div>
+            <div  class="mb-2">
+                <label for="password" class="form-label">Password</label>
+                <div>
+                    <input type="password" name="password" class="form-control">
+                </div>
+            </div>
+            <div class="mb-2">
+                <label for="city" class="form-label">City</label>
+                <div>
+                    <select name="city" class="form-select">
+                        <option value="">Delhi</option>
+                        <option value="">Pune</option>
+                        <option value="">Hyd</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-2">
+                <label for="Supscription" class="form-label">Want? Supscription</label>
+                <div class="form-switch">
+                    <input type="checkbox" name="Supscription" class="form-check-input"><label class="form-label">Yes</label>
+                </div>
+            </div>
+            <div class="mb-2">
+                <label for="price" class="form-label">Select Price</label>
+                <div>
+                    <input type="range" min="1" max="50000" value="10000" name="price" class="form-range">
+                </div>
+            </div>
+            <div>
+                <button class="btn btn-primary w-100">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
