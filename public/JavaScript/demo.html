@@ -1,0 +1,25 @@
+<script>
+    "use strict"
+    // Global Scope
+    const x=10; //initialisation
+    y=20;       //Assignation
+    var y;      //Declaration
+    let z;      //Declaration
+    z=30        //Assignation
+        function f1(){
+           window.a=300;    //Dyanamic Variable
+            document.write("F1 - X :- "+ x+" Y :- "+y+" Z :- "+z+"<br>");
+              y=50;    //Shadowing
+        }
+       function f2(){
+            document.write("F2 - X :- "+ x+" Y :- "+y+" Z :- "+z+"<br>");
+            document.write("A :- "+a)
+       }
+       f1();
+       f2();
+       //Finding smallest number
+       var array=[9,5,3,5,2,7,4];
+       var sarray=array.sort();
+       console.log(sarray[0]);
+      
+</script>

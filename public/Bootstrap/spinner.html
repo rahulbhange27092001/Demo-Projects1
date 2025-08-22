@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinner-Bootstrap</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body class="container-fluid">
+    <div>
+        <h2>Spinner</h2>
+        <button class="btn btn-outline-danger">
+            <span class="spinner-grow spinner-grow-sm"></span> Loading
+        </button>
+        <button class="btn btn-danger">
+                <span class="spinner-border spinner-border-sm"></span> Loading
+        </button>
+    </div>
+    <div>
+        <h2>HTML Progress</h2>
+        <progress min="0" max="100" value="20"></progress>20% Completed
+
+        <h2>Bootstrap Progress</h2>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success p-2" style="width: 30%;">
+                <span>30% Completed</span>
+            </div>
+            <div class="progress-bar progress-bar-animated progress-bar-striped bg-danger" style="width: 70%;">
+                70% Remaining
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>Bootstrap-Badge</h2>
+        <div>
+            <button class="btn btn-warning position-relative">
+                <span>Notification <span class="border rounded rounded-circle badge position-absolute bg-primary"> <span class="bi bi-bell-fill"></span></span> </span>
+            </button>
+        </div>
+        <div>
+
+        </div>
+    </div>
+</body>
+</html>
