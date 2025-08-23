@@ -1,0 +1,27 @@
+*{
+    margin: 10px;
+    padding: 5px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: antiquewhite;
+}
+form{
+    max-width: 600px;
+    background-color: rgb(219, 166, 6);
+    color: black;
+}
+#results{
+    display: none;
+    background-color: rgb(205, 198, 198);
+    color: rgb(18, 17, 17);
+    font-weight: bold;
+    font-size: medium;
+}
+button{
+    width: 50%;
+    font-size: medium;
+}
